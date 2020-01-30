@@ -18,7 +18,7 @@ class Point {
     private int numeroOrdre;
 
     // 8
-    private final String nom = "PointB";
+//    private final String name;
 
     // 3 - METHODE 1
     //public Point() {
@@ -55,19 +55,40 @@ class Point {
         return new Point(x, y);
     }
 
+    // =======================================================
+    // 8
+
+//    private Point(String name, int x, int y) {
+//        this.name = name;
+//        this.x=x;
+//        this.y=y;
+//        totalPoint++;
+//        numeroOrdre = totalPoint;
+//    }
+//
+//    public static Point creationPoint(String name, int x, int y) {
+//        if (x < 0 || y < 0)
+//            return null;
+//        return new Point(name, x, y);
+//    }
+//
+//    public String toString () {
+//        return "Point " + this.name + " numero " + this.numeroOrdre + " sur " + Point.totalPoint
+//                + " : abscisse : " + this.x + ", ordonnee : " + this.y ;
+//    }
+
+    // fin 8
+    // =========================================================
+
     // 2
 //    public String toString () {
 //        return "abscisse : " + x + ", ordonnee : " + y ;
 //    }
 
     // 4
-//    public String toString () {
-//        return "Point numero " + this.numeroOrdre + " sur " + Point.totalPoint + " : abscisse : " + x + ", ordonnee : " + y ;
-//    }
-
-    // 8
     public String toString () {
-        return "Point " + nom + " numero " + this.numeroOrdre + " sur " + Point.totalPoint + " : abscisse : " + x + ", ordonnee : " + y ;
+        return "Point numero " + this.numeroOrdre + " sur " + Point.totalPoint +
+                " : abscisse : " + this.x + ", ordonnee : " + this.y ;
     }
 
     // 5

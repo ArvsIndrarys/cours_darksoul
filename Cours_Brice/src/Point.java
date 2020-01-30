@@ -40,7 +40,8 @@ class Point {
 //    }
 
     // 4
-    private Point(int x, int y) {
+    // Set to private for 7C
+    public Point(int x, int y) {
         this.x=x;
         this.y=y;
         totalPoint++;

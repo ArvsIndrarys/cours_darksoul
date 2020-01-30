@@ -40,14 +40,6 @@ class Point {
 //    }
 
     // 4
-//    public Point(int x, int y) {
-//        this.x=x;
-//        this.y=y;
-//        totalPoint++;
-//        numeroOrdre = totalPoint;
-//    }
-
-    // 7 C
     private Point(int x, int y) {
         this.x=x;
         this.y=y;

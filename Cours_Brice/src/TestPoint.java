@@ -34,11 +34,12 @@ class TestPoint {
         System.out.println(p2); // Renvoi Point numero 2 sur 4 : abscisse : 5, ordonnee : 6
         System.out.println(p3); // Renvoi Point numero 3 sur 4 : abscisse : 56, ordonnee : 78
         // 5
-        System.out.println(p4); // Renvoi Point numero 3 sur 4 : abscisse : 56, ordonnee : 78
-        System.out.println(Point.egalite(p1, p2)); // Renvoi false
-        System.out.println(Point.egalite(p3, p4)); // Renvoi true
-        System.out.println(p1.egalite(p3)); // Renvoi false
-        System.out.println(p3.egalite(p4)); // Renvoi true
+        System.out.println("P1 == P2? " + Point.egalite(p1, p2)); // Affiche false
+        System.out.println("P1 == P1? " + Point.egalite(p1, p1)); //  Affiche false
+        System.out.println("P3 == null? " +Point.egalite(p3, null)); // Affiche true
+        System.out.println("P1 == P3? " + p1.egalite(p3)); // Affiche false
+        System.out.println("P3 == P3? " + p3.egalite(p3)); // Affiche true
+        System.out.println("P3 == null? " + p3.egalite(null)); // Affiche false
         // 6
         System.out.println(p1.egalASoi()); // Renvoi true
         // 7 A

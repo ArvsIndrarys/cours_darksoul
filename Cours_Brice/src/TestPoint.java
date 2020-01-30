@@ -45,7 +45,8 @@ class TestPoint {
         System.out.println("P3 == null? " + p3.egalite(null)); // Affiche false
 
         // 6
-        System.out.println(p1.egalASoi()); // Renvoi true
+        System.out.println("P1 égal à soi? " + p1.egalASoi()); // Affiche true
+
         // 7 A
         System.out.println("x : " + p1.getX() + " , y : " + p1.getY()); // Renvoi x : 0 , y : 0
         // 7 B

@@ -22,12 +22,6 @@ class TestPoint {
         Point p3 = new Point(56, 78);
         Point p4 = new Point(56, 78);
 
-        // 7 C
-        Point p1 = Point.creationPoint(0, 0);
-        Point p2 = Point.creationPoint(5, 6);
-        Point p3 = Point.creationPoint(56, 78);
-        Point p4 = Point.creationPoint(56, 78);
-
         // 4
         System.out.println(p1); // Point numero 1 sur 4 : abscisse : 0, ordonnee : 0
         System.out.println(p2); // Renvoi Point numero 2 sur 4 : abscisse : 5, ordonnee : 6
@@ -55,5 +49,18 @@ class TestPoint {
         System.out.println("Modified P1 now is : " + p1); // Renvoi Point numero 1 sur 4 : abscisse : 5, ordonnee : 10
         // Notons que la preuve de sa modification est son indice qui n'est pas change (1 sur 4)
 
+
+        // 7 C
+        Point p5 = Point.creationPoint(0, 0);
+        Point p6 = Point.creationPoint(56, 78);
+        Point p7 = Point.creationPoint(-2, 7);
+        Point p8 = Point.creationPoint(3, -8);
+        Point p9 = Point.creationPoint(-10, -38);
+
+        System.out.println("Point {0,0}: " + p5);
+        System.out.println("Point {56, 78}: " + p6);
+        System.out.println("Point {-2, 7}: " + p7);
+        System.out.println("Point {3, -8}: " + p8);
+        System.out.println("Point {-10, -38}: " + p9);
     }
 }

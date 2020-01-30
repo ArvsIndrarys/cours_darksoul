@@ -4,17 +4,20 @@ class TestPoint {
     static public void main(String[] args) {
 
         // 2 - METHODE 1
-        //int x = Integer.parseInt(args[0]);
-        //int y = Integer.parseInt(args[1]);
+        int x = Integer.parseInt(args[0]);
+        int y = Integer.parseInt(args[1]);
+        Point p1_hardcode = new Point(x, y);
+        System.out.println("Hardcoded point: " + p1_hardcode); // En fonction du programme
 
         // 2 - METHODE 2
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter x:");
-//        int x = sc.nextInt();
-//        System.out.println("Enter y:");
-//        int y = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter x:");
+        int x1 = sc.nextInt();
+        System.out.println("Enter y:");
+        int y1 = sc.nextInt();
 
-//        Point p1 = new Point(x, y);
+        Point p1_entered = new Point(x1, y1);
+        System.out.println("Entered point: " + p1_entered); // En fonction de l'input utilisateur
 
         // 4
         Point p1 = new Point(0, 0);

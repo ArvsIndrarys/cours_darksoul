@@ -69,10 +69,12 @@ class Point {
 
     // 5
     public static boolean egalite(Point p1, Point p2) {
-        /* 7 A
-        *  Pas besoin d'utiliser les accesseurs car les méthondes sont déjà au sein de l'objet Point, elles ont donc un accès direct aux attributs
-         */
-        if ((p1.x == p2.x && p1.y == p2.y) || p1.numeroOrdre == p2.numeroOrdre)
+        // 7A:  Pas besoin d'utiliser les accesseurs car les méthodes sont déjà au sein de l'objet Point,
+        // elles ont donc un accès direct aux attributs
+        if (p1 == null || p2 == null){
+            return false;
+        }
+        else if ((p1.x == p2.x && p1.y == p2.y) || p1.numeroOrdre == p2.numeroOrdre)
             return true;
         else
             return false;
@@ -80,7 +82,10 @@ class Point {
 
     // 5
     public boolean egalite(Point p1) {
-        if ((p1.x == this.x && p1.y == this.y) || p1.numeroOrdre == this.numeroOrdre)
+        if (p1 == null){
+            return false;
+        }
+        else if ((p1.x == this.x && p1.y == this.y) || p1.numeroOrdre == this.numeroOrdre)
             return true;
         else
             return false;

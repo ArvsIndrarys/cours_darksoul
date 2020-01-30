@@ -48,13 +48,12 @@ class TestPoint {
         System.out.println("P1 égal à soi? " + p1.egalASoi()); // Affiche true
 
         // 7 A
-        System.out.println("x : " + p1.getX() + " , y : " + p1.getY()); // Renvoi x : 0 , y : 0
+        System.out.println("P1 = {x : " + p1.getX() + " , y : " + p1.getY() + "}"); // Affiche x : 0 , y : 0
         // 7 B
-        System.out.println("set x : 5");
         p1.setX(5);
-        System.out.println("set y : 10");
         p1.setY(10);
-        System.out.println(p1); // Renvoi Point numero 1 sur 4 : abscisse : 5, ordonnee : 10
+        System.out.println("Modified P1 now is : " + p1); // Renvoi Point numero 1 sur 4 : abscisse : 5, ordonnee : 10
+        // Notons que la preuve de sa modification est son indice qui n'est pas change (1 sur 4)
 
     }
 }

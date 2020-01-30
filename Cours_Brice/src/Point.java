@@ -102,19 +102,23 @@ class Point {
     }
 
     // 7 A
+    // Notons que le `this.` n'est pas obligatoire, le seul x que cette méthode peut connaître est l'attribut
     public int getX() {
         return this.x;
     }
 
+    // Notons que le `this.` n'est pas obligatoire, le seul y que cette méthode peut connaître est l'attribut
     public int getY() {
         return this.y;
     }
 
     // 7 B
+    // Notons que le `this.` n'est pas obligatoire, le seul x que cette méthode peut connaître est l'attribut
     public void setX(int x) {
         this.x = x;
     }
 
+    // Notons que le `this.` n'est pas obligatoire, le seul y que cette méthode peut connaître est l'attribut
     public void setY(int y) {
         this.y = y;
     }

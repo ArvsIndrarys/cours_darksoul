@@ -17,9 +17,9 @@ class TestPoint {
 //        Point p1 = new Point(x, y);
 
         // 4
-//        Point p1 = new Point(0, 0);
-//        Point p2 = new Point(5, 6);
-//        Point p3 = new Point(56, 78);
+        Point p1 = new Point(0, 0);
+        Point p2 = new Point(5, 6);
+        Point p3 = new Point(56, 78);
         // 5
 //        Point p4 = new Point(56, 78);
 

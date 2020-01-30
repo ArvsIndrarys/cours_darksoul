@@ -57,7 +57,7 @@ class Point {
 
     // 2
 //    public String toString () {
-//        return "Point numero " + this.numeroOrdre + " sur " + Point.totalPoint + " : abscisse : " + x + ", ordonnee : " + y ;
+//        return "abscisse : " + x + ", ordonnee : " + y ;
 //    }
 
     // 4
@@ -114,7 +114,6 @@ class Point {
         return this.y;
     }
 
-    // 7 B
     // Notons que le `this.` n'est pas obligatoire, le seul x que cette méthode peut connaître est l'attribut
     public void setX(int x) {
         this.x = x;

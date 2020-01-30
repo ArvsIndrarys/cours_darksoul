@@ -20,8 +20,7 @@ class TestPoint {
         Point p1 = new Point(0, 0);
         Point p2 = new Point(5, 6);
         Point p3 = new Point(56, 78);
-        // 5
-//        Point p4 = new Point(56, 78);
+        Point p4 = new Point(56, 78);
 
         // 7 C
         Point p1 = Point.creationPoint(0, 0);
@@ -33,13 +32,18 @@ class TestPoint {
         System.out.println(p1); // Point numero 1 sur 4 : abscisse : 0, ordonnee : 0
         System.out.println(p2); // Renvoi Point numero 2 sur 4 : abscisse : 5, ordonnee : 6
         System.out.println(p3); // Renvoi Point numero 3 sur 4 : abscisse : 56, ordonnee : 78
+        System.out.println(p4); // Renvoi Point numero 3 sur 4 : abscisse : 56, ordonnee : 78
+
         // 5
         System.out.println("P1 == P2? " + Point.egalite(p1, p2)); // Affiche false
-        System.out.println("P1 == P1? " + Point.egalite(p1, p1)); //  Affiche false
-        System.out.println("P3 == null? " +Point.egalite(p3, null)); // Affiche true
+        System.out.println("P1 == P1? " + Point.egalite(p1, p1)); //  Affiche true
+        System.out.println("P3 == P4? " + Point.egalite(p3, p4)); //  Affiche false
+        System.out.println("P3 == null? " +Point.egalite(p3, null)); // Affiche false
         System.out.println("P1 == P3? " + p1.egalite(p3)); // Affiche false
         System.out.println("P3 == P3? " + p3.egalite(p3)); // Affiche true
+        System.out.println("P3 == P4? " + p3.egalite(p4)); // Affiche false
         System.out.println("P3 == null? " + p3.egalite(null)); // Affiche false
+
         // 6
         System.out.println(p1.egalASoi()); // Renvoi true
         // 7 A

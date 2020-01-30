@@ -69,6 +69,8 @@ class Point {
     }
 
     // 5
+    // Ne pas oublier le null-check, checker un attribut de `null` cause un crash
+    // car tentative d'accès à une zone mémoire inconnue
     public static boolean egalite(Point p1, Point p2) {
         // 7A:  Pas besoin d'utiliser les accesseurs car les méthodes sont déjà au sein de l'objet Point,
         // elles ont donc un accès direct aux attributs
@@ -82,6 +84,8 @@ class Point {
     }
 
     // 5
+    // Ne pas oublier le null-check, checker un attribut de `null` cause un crash
+    // car tentative d'accès à une zone mémoire inconnue
     public boolean egalite(Point p1) {
         if (p1 == null){
             return false;

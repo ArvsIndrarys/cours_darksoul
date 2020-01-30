@@ -50,6 +50,8 @@ class Point {
 
     // 7 C
     public static Point creationPoint(int x, int y) {
+        if (x < 0 || y < 0)
+            return null;
         return new Point(x, y);
     }
 

@@ -17,9 +17,6 @@ class Point {
     private static int totalPoint;
     private int numeroOrdre;
 
-    // 8
-    private final String nom = "PointB";
-
     // 3 - METHODE 1
     //public Point() {
     //    x = 10;
@@ -34,21 +31,15 @@ class Point {
     public Point() {
     }
 
+    // 2
 //    public Point(int x, int y) {
 //        this.x=x;
 //        this.y=y;
 //    }
 
     // 4
-//    public Point(int x, int y) {
-//        this.x=x;
-//        this.y=y;
-//        totalPoint++;
-//        numeroOrdre = totalPoint;
-//    }
-
-    // 7 C
-    private Point(int x, int y) {
+    // Set to private for 7C
+    public Point(int x, int y) {
         this.x=x;
         this.y=y;
         totalPoint++;
@@ -57,38 +48,72 @@ class Point {
 
     // 7 C
     public static Point creationPoint(int x, int y) {
+        if (x < 0 || y < 0)
+            return null;
         return new Point(x, y);
     }
 
+    // =======================================================
+    // 8
+
+//    private final String name;
+
+//    private Point(String name, int x, int y) {
+//        this.name = name;
+//        this.x=x;
+//        this.y=y;
+//        totalPoint++;
+//        numeroOrdre = totalPoint;
+//    }
+//
+//    public static Point creationPoint(String name, int x, int y) {
+//        if (x < 0 || y < 0)
+//            return null;
+//        return new Point(name, x, y);
+//    }
+//
+//    public String toString () {
+//        return "Point " + this.name + " numero " + this.numeroOrdre + " sur " + Point.totalPoint
+//                + " : abscisse : " + this.x + ", ordonnee : " + this.y ;
+//    }
+
+    // fin 8
+    // =========================================================
+
     // 2
 //    public String toString () {
-//        return "Point numero " + this.numeroOrdre + " sur " + Point.totalPoint + " : abscisse : " + x + ", ordonnee : " + y ;
+//        return "abscisse : " + x + ", ordonnee : " + y ;
 //    }
 
     // 4
-//    public String toString () {
-//        return "Point numero " + this.numeroOrdre + " sur " + Point.totalPoint + " : abscisse : " + x + ", ordonnee : " + y ;
-//    }
-
-    // 8
     public String toString () {
-        return "Point " + nom + " numero " + this.numeroOrdre + " sur " + Point.totalPoint + " : abscisse : " + x + ", ordonnee : " + y ;
+        return "Point numero " + this.numeroOrdre + " sur " + Point.totalPoint +
+                " : abscisse : " + this.x + ", ordonnee : " + this.y ;
     }
 
     // 5
+    // Ne pas oublier le null-check, checker un attribut de `null` cause un crash
+    // car tentative d'accès à une zone mémoire inconnue
     public static boolean egalite(Point p1, Point p2) {
-        /* 7 A
-        *  Pas besoin d'utiliser les accesseurs car les méthondes sont déjà au sein de l'objet Point, elles ont donc un accès direct aux attributs
-         */
-        if ((p1.x == p2.x && p1.y == p2.y) || p1.numeroOrdre == p2.numeroOrdre)
+        // 7A:  Pas besoin d'utiliser les accesseurs car les méthodes sont déjà au sein de l'objet Point,
+        // elles ont donc un accès direct aux attributs
+        if (p1 == null || p2 == null){
+            return false;
+        }
+        else if ((p1.x == p2.x && p1.y == p2.y) || p1.numeroOrdre == p2.numeroOrdre)
             return true;
         else
             return false;
     }
 
     // 5
+    // Ne pas oublier le null-check, checker un attribut de `null` cause un crash
+    // car tentative d'accès à une zone mémoire inconnue
     public boolean egalite(Point p1) {
-        if ((p1.x == this.x && p1.y == this.y) || p1.numeroOrdre == this.numeroOrdre)
+        if (p1 == null){
+            return false;
+        }
+        else if ((p1.x == this.x && p1.y == this.y) || p1.numeroOrdre == this.numeroOrdre)
             return true;
         else
             return false;
@@ -100,19 +125,22 @@ class Point {
     }
 
     // 7 A
+    // Notons que le `this.` n'est pas obligatoire, le seul x que cette méthode peut connaître est l'attribut
     public int getX() {
         return this.x;
     }
 
+    // Notons que le `this.` n'est pas obligatoire, le seul y que cette méthode peut connaître est l'attribut
     public int getY() {
         return this.y;
     }
 
-    // 7 B
+    // Notons que le `this.` n'est pas obligatoire, le seul x que cette méthode peut connaître est l'attribut
     public void setX(int x) {
         this.x = x;
     }
 
+    // Notons que le `this.` n'est pas obligatoire, le seul y que cette méthode peut connaître est l'attribut
     public void setY(int y) {
         this.y = y;
     }

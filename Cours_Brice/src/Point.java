@@ -17,9 +17,6 @@ class Point {
     private static int totalPoint;
     private int numeroOrdre;
 
-    // 8
-//    private final String name;
-
     // 3 - METHODE 1
     //public Point() {
     //    x = 10;
@@ -58,6 +55,8 @@ class Point {
 
     // =======================================================
     // 8
+
+//    private final String name;
 
 //    private Point(String name, int x, int y) {
 //        this.name = name;

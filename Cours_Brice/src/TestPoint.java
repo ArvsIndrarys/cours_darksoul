@@ -66,6 +66,7 @@ class TestPoint {
         System.out.println("Point {3, -8}: " + p8);
         System.out.println("Point {-10, -38}: " + p9);
 
+        // 8
 //        Point p1 = Point.creationPoint("point1", 0, 0);
 //        Point p2 = Point.creationPoint("point2", 56, 78);
 //

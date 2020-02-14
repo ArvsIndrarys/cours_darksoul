@@ -22,16 +22,15 @@ public class Moteur {
         }
     }
 
-    public boolean utiliser(int carburantUtilise) {
+    public int utiliser(int carburantUtilise) {
         if (carburantUtilise > carburant) {
             System.out.println("Moteur utilise " + carburant + " litres");
             carburant = 0;
-            return false;
         } else {
             System.out.println("Moteur utilise " + carburantUtilise + " litres");
             carburant -= carburantUtilise;
-            return true;
         }
+        return carburant;
     }
 
     public void arreter() {

@@ -26,7 +26,7 @@ public class Voiture {
     }
 
     public boolean rouler(int essenceUtilise) {
-        if (!moteur.utiliser(essenceUtilise)){
+        if (moteur.utiliser(essenceUtilise) == 0){
             System.out.println("Panne d'essence");
             return false;
         } else {
